@@ -1,10 +1,20 @@
 #include<stdio.h>
 void main()
 {
-	float a,b,c,sum,avg;
-	printf("enter 3 nos \n");
-	scanf("%f %f %f",&a,&b,&c);
-	sum = a+b+c;
-	avg = sum/3;
-	printf("the sum of 3 nos is %.2f \nand the average is %.2f \n",sum,avg);
+	int sum=0,x=1,limit;
+	float avg;
+	printf("enter the limit\n");
+	scanf("%d",&limit);
+	for (x=1;x<=limit;x++)
+	{
+		sum+=x;
+	}
+	/*(x<=limit)
+	{
+		sum+=x;
+		x+=1;
+	}*/
+	avg = sum/limit;
+	printf("the sum of the first 5 natural numbers is %d and the average is %f",sum,avg);
+	
 }
